@@ -14,8 +14,11 @@ class Capital extends Model
         'country_id'
     ];
 
+    //one to one
     public function country()
     {
         return $this->belongsTo(Country::class);
     }
+
+    
 }
