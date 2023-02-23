@@ -13,8 +13,15 @@ class Country extends Model
         'country_name'
     ];
 
+    //one to one
     public function capital()
     {
         return $this->hasOne(Capital::class);
+    }
+
+    //one to many
+    public function city()
+    {
+        return $this->hasMany(city::class);
     }
 }

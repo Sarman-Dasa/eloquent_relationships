@@ -30,6 +30,7 @@ class IndexController extends Controller
         $data = Capital::with('country')->find($id);
         return $this->sendSuccessResponse(200,"get Data base on Capital Id",$data);
     }
+//-----------------------------------------//End Code //---------------------------------------------------//
 
 
 }
